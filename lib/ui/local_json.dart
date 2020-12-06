@@ -60,7 +60,7 @@ class _LocalJsonState extends State<LocalJson> {
         return Dismissible(
           direction: DismissDirection.endToStart,
           background: background,
-          key: Key(counter.toString()),
+          key: UniqueKey(),
           onDismissed: (delete) {
             setState(() {
               counter++;
